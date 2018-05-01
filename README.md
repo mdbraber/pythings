@@ -12,8 +12,8 @@ The SQL to create these database views:
 ```
 CREATE VIEW ItemView AS SELECT * FROM TMTask WHERE trashed = 0
 CREATE VIEW TaskView AS SELECT * FROM TMTask WHERE type = 0 AND trashed = 0
-CREATE VIEW HeadingView AS SELECT * FROM TMTask WHERE type = 2 AND trashed = 0
 CREATE VIEW ProjectView AS SELECT * FROM TMTask WHERE type = 1 AND trashed = 0
+CREATE VIEW HeadingView AS SELECT * FROM TMTask WHERE type = 2 AND trashed = 0
 ```
 
 # Required
