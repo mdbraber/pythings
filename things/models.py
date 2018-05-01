@@ -6,6 +6,10 @@ import time
 import sqlparse
 
 database = SqliteDatabase(str(Path.home()) + '/Library/Containers/com.culturedcode.ThingsMac/Data/Library/Application Support/Cultured Code/Things/Things.sqlite3', **{})
+#database.execute_sql('CREATE VIEW ItemView AS SELECT * FROM TMTask WHERE trashed = 0')
+#database.execute_sql('CREATE VIEW TaskView AS SELECT * FROM TMTask WHERE type = 0 AND trashed = 0')
+#database.execute_sql('CREATE VIEW HeadingView AS SELECT * FROM TMTask WHERE type = 2 AND trashed = 0')
+#database.execute_sql('CREATE VIEW ProjectView AS SELECT * FROM TMTask WHERE type = 1 AND trashed = 0')
 
 class FloatDateTimeField(Field):
     field_type = 'float'
