@@ -1,5 +1,5 @@
-#!/usr/local/bin/python3.6
-from things_object import *
+#!/usr/local/bin/python3
+from things import *
 
 last = None
 for item in Things.logbook():
